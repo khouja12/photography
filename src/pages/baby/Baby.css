@@ -1,0 +1,17 @@
+.BabyContainer {
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.imgCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.aa {
+  width: calc(20.33% - 20px); /* Adjust the width as needed */
+  height: auto;
+}

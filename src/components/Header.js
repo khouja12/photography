@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../img/header/logo.svg";
+import Logo from "../img/logo/WhatsApp Image 2024-03-18 at 15.19.36.jpeg";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import MobileNav from "./MobileNav";
@@ -24,7 +24,7 @@ const Header = () => {
     <header className="relative w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex dlex-col lg:flex-row lg:items-center w-full justify-between">
         <Link to={"/"}>
-          <img src={Logo} alt="logo" className="max-w-[200px] " />
+          <img src={Logo} alt="logo" className="logo" />
         </Link>
 
         <nav className="hidden xl:flex gap-x-12 ">
@@ -47,12 +47,14 @@ const Header = () => {
             onMouseEnter={openDropdownOnHover}
             onMouseLeave={closeDropdown}
           >
-            <span
-              onClick={toggleDropdown}
-              className="text-[#696c6d] hover:text-primary transition cursor-pointer"
-            >
-              Portfolio
-            </span>
+            <Link to={'/Portfolio'}>
+              <span
+                onClick={toggleDropdown}
+                className="text-[#696c6d] hover:text-primary transition cursor-pointer"
+              >
+                Portfolio
+              </span>
+            </Link>
             {dropdownOpen && (
               <div className="absolute top-full left-0 bg-white shadow-lg p-2">
                 <Link
@@ -62,13 +64,13 @@ const Header = () => {
                   Lifestyle
                 </Link>
                 <Link
-                  to={"/Portfolio"}
+                  to={"/Wedding"}
                   className="block py-1 text-[#696c6d] hover:text-primary transition"
                 >
                   Wedding
                 </Link>
                 <Link
-                  to={"/Portfolio"}
+                  to={"/Baby"}
                   className="block py-1 text-[#696c6d] hover:text-primary transition"
                 >
                   Baby

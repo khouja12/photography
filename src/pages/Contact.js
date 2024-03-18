@@ -2,6 +2,7 @@ import React from "react";
 import womanImg from "../img/contact/woman.png";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
+
 const Contact = () => {
   return (
     <motion.section
@@ -12,7 +13,7 @@ const Contact = () => {
       className="section"
     >
       <div className="container h-full mx-auto">
-        <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left   ">
+        <div className="flex flex-col lg:flex-row h-full items-center justify-start  gap-x-8 text-center lg:text-left   ">
           {/*bg*/}
           <motion.div
             initial={{ opacity: 0, y: "100%" }}
@@ -60,9 +61,9 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ transition: transition1, duration: 1.5 }}
-            className="lg:flex-1 "
+            className="lg:flex-1"
           >
-            <img src={womanImg} alt="" />
+            <img src={womanImg} alt="Contact" className="w-full h-auto" />
           </motion.div>
         </div>
       </div>

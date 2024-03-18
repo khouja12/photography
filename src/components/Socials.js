@@ -11,11 +11,19 @@ const Socials = () => {
     <div className="hidden xl:flex ml-24">
       <ul className="flex gap-x-4">
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/Yosra1991a" target="_blank">
             <ImFacebook />
           </a>
         </li>
 
+        <li>
+          <a
+            href="https://www.instagram.com/___yk_photography____/"
+            target="_blank"
+          >
+            <ImInstagram />
+          </a>
+        </li>
         <li>
           <a href="www.pinterest.com" target="_blank">
             <ImPinterest />
@@ -31,12 +39,6 @@ const Socials = () => {
         <li>
           <a href="www.twitter.com" target="_blank">
             <ImTwitter />
-          </a>
-        </li>
-
-        <li>
-          <a href="www.intagram.com" target="_blank">
-            <ImInstagram />
           </a>
         </li>
       </ul>

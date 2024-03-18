@@ -5,7 +5,7 @@ import About from "./../pages/About";
 import Portfolio from "./../pages/Portfolio";
 import Contact from "./../pages/Contact";
 import { AnimatePresence } from "framer-motion";
-import LifeStyle from "../pages/lifeStyle/LifeStyle";
+import Baby from "../pages/baby/Baby";
 
 const AnimRoutes = () => {
   const location = useLocation();
@@ -15,9 +15,8 @@ const AnimRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/lifeStyle" element={<LifeStyle />} />
+        <Route path="/Baby" element={<Baby />} />
         <Route path="/Contact" element={<Contact />} />
-       
       </Routes>
     </AnimatePresence>
   );

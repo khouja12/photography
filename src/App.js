@@ -15,12 +15,11 @@ const App = () => {
     <div>
       <Router>
         <Header />
-        <div style={{display:"inline-block"}}   >
-        <AnimRoutes />
+        <div style={{ display: "inline-block" }}>
+          <AnimRoutes />
         </div>
-       
       </Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
