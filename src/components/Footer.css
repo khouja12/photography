@@ -1,0 +1,28 @@
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center-align text */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .footer-links {
+    margin-top: 10px; /* Adjust spacing between links and text */
+  }
+  
+  .footer-links a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Adjust spacing between links */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
