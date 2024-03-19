@@ -28,58 +28,68 @@ const Portfolio = () => {
             <h1 className="h1">portfolio</h1>
 
             <p className="mb-2 max-w-sm  ">
-              Dissimulatis timeri et nobilitatis modi Minervius urbi paucis
-              acervi et et <b>acervi paucis et nobilitatis legati haec</b>
-              senator quae praefecto inlicito aerumnarum timeri et grandiora
-              sint Minervius ex inusitato acervi.
+              Welcome to my portfolio, where moments come alive through the art
+              of photography. Here, you'll find a curated collection of my work,
+              showcasing the diverse range of subjects and styles I specialize
+              in. From the tender embrace of a newlywed couple to the vibrant
+              colors of nature's landscapes, each image tells a unique story,
+              captured with precision and passion. Whether you're seeking
+              inspiration for your own special event or simply appreciate the
+              beauty of the world around us, I invite you to explore and immerse
+              yourself in the visual journey that awaits within these pages.
+              Every photograph is not just a picture but a reflection of the
+              emotions, memories, and experiences that make life extraordinary.
             </p>
 
             <br />
 
-            <p className="mb-2 max-w-sm ">
-              Dissimulatis timeri et nobilitatis modi Minervius urbi paucis
-              acervi et et acervi paucis et nobilitatis legati haec senator quae
-              praefecto inlicito aerumnarum timeri et grandiora sint Minervius
-              ex inusitato acervi.
-            </p>
-
             <br />
-            <Link to={"/Contact"} className="btn mb-[30px]mx-auto lg:mx-0 ">
-              hire me
-            </Link>
+            <div className="mb-[8rem]  ">
+              <Link to={"/Contact"} className="btn mb-[30px]mx-auto  lg:mx-0 ">
+                Conatct Me
+              </Link>
+            </div>
           </motion.div>
           {/*image*/}
           <div className="grid grid-cols-2 lg:gap-2">
             <div className="max-w[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden ">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
-                src={image1}
-                alt=""
-              />
+              <a href="/lifeStyle">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
+                  src={image1}
+                  alt=""
+                />
+              </a>
             </div>
 
             <div className="max-w[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden ">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
-                src={image2}
-                alt=""
-              />
+              <a href="/Wedding">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
+                  src={image2}
+                  alt=""
+                />
+              </a>
             </div>
 
             <div className="max-w[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden ">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
-                src={image3}
-                alt=""
-              />
+              <a href="/Baby">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
+                  src={image3}
+                  alt=""
+                />
+              </a>
             </div>
 
             <div className="max-w[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden ">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
-                src={image4}
-                alt=""
-              />
+              <a>
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500  "
+                  src={image4}
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>

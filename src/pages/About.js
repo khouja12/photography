@@ -36,20 +36,10 @@ const About = () => {
             <h1 className="h1">About me</h1>
 
             <p className="mb-2  ">
-              Dissimulatis timeri et nobilitatis modi Minervius urbi paucis
-              acervi et et <b>acervi paucis et nobilitatis legati haec</b>
-              senator quae praefecto inlicito aerumnarum timeri et grandiora
-              sint Minervius ex inusitato acervi.
+            As a professional photographer based in Montreal, Canada, <br/> I am <b> Yosra Khouja </b>, dedicated to capturing life's most precious moments through my lens. With a passion for storytelling and an eye for detail, I specialize in wedding, birthday, and nature photography, crafting timeless images that evoke emotion and preserve memories for a lifetime. With years of experience and a commitment to excellence, I strive to exceed my clients' expectations, delivering stunning visuals that encapsulate the essence of every occasion. From intimate ceremonies to grand celebrations, I am honored to be entrusted with documenting life's most significant milestones.
             </p>
 
-            <br />
-
-            <p>
-              Dissimulatis timeri et nobilitatis modi Minervius urbi paucis
-              acervi et et acervi paucis et nobilitatis legati haec senator quae
-              praefecto inlicito aerumnarum timeri et grandiora sint Minervius
-              ex inusitato acervi.
-            </p>
+          
 
             <br />
             <Link to={"/Portfolio"} className="btn">

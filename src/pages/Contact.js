@@ -2,7 +2,7 @@ import React from "react";
 import womanImg from "../img/contact/woman.png";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
-
+import "./Contact.css";
 const Contact = () => {
   return (
     <motion.section
@@ -32,23 +32,30 @@ const Contact = () => {
             <form className="flex flex-col gap-y-4 ">
               <div className=" flex gap-x-10">
                 <input
-                  className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] "
+                  className="input-field"
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your Full Name"
                 />
                 <input
-                  className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] "
+                  className="input-field "
                   type="text"
                   placeholder="Your Email Adresse"
                 />
+                <input
+                  className="input-field input-field-number"
+                  type="text"
+                  placeholder="Your Number"
+                />
               </div>
-              <input
-                className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] "
+              <input  
+                className="input-field "
+                
                 type="text"
                 placeholder="Your Message"
               />
+
               <button className="btn mb--[30px] mx-auto lg:mx-0 self-start ">
-                {" "}
+            
                 Send it
               </button>
             </form>

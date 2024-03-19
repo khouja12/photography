@@ -15,14 +15,26 @@
   margin-bottom: 20px;
 }
 
+.titleFooter{
+  display: flex;
+  justify-content: center;
+  font-family: Playfair Display;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 120%;
+  /* letter-spacing: -0.05em; */
+}
 .footer-about p {
   font-size: 14px;
 }
 
-.social-links a {
-  color: #fff;
-  margin-right: 1px;
-  width: 5rem;
+.social-links {
+  display: flex;
+  justify-content: space-around ;
+  padding: 2rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 .footer-bottom {
@@ -33,6 +45,10 @@
 .footer-bottom p {
   font-size: 12px;
 }
+.FooterContent {
+  color:#dfe6e9 ;
+}
+
 
 
 

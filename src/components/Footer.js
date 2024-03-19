@@ -1,33 +1,39 @@
-import React from "react";
-import "./Footer.css"; // Import your CSS file for styling
-import logo from '../img/logo/WhatsApp Image 2024-03-18 at 15.19.36.jpeg'
+import React, { useState } from "react";
+import "./Footer.css";
+import logo from "../img/logo/WhatsApp Image 2024-03-18 at 15.19.36.jpeg";
 
 const Footer = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-contact">
-          <h3>Contact</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +1234567890</p>
-          <p>Address: 123 Street, City, Country</p>
+          <h3 className="titleFooter">Contact</h3>
+          <p className="FooterContent">Email: info@example.com</p>
+          <p className="FooterContent">Phone: +1234567890</p>
+          <p className="FooterContent">Address: 123 Street, City, Country</p>
         </div>
         <div className="footer-social">
-          <h3>Follow Us</h3>
+          <h3 className="titleFooter">Follow Us</h3>
           <div className="social-links">
-            <a
-              href="https://www.facebook.com/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-
+            {/* intagram */}
             <div className="tooltip-container">
               <div className="tooltip">
                 <div className="profile">
                   <div className="user">
-                    <div className="img"> <img src={logo} /></div>
+                    <div className="img">
+                      {" "}
+                      <img src={logo} />
+                    </div>
                     <div className="details">
                       <div className="name">User</div>
                       <div className="username">@___yk_photography____</div>
@@ -63,18 +69,47 @@ const Footer = () => {
               </div>
             </div>
 
-            <a
-              href="https://twitter.com/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
+            {/* facebook  */}
+
+            <section className="flex justify-center items-center">
+              <a
+                href="https://www.facebook.com/Yosra1991a"
+                className={`group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#316FF6] text-white font-semibold transition-all duration-500 ${
+                  isHovered
+                    ? "hover:translate-y-3 hover: hover:from-[#331029] hover:to-[#310413]"
+                    : ""
+                }`}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleMouseLeave}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="3em"
+                  viewBox="0 0 448 512"
+                  stroke-width="1"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  className="w-9"
+                >
+                  <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
+                </svg>
+                <span
+                  className={`absolute ${
+                    isHovered
+                      ? "opacity-100 text-gray-700 text-sm -translate-y-10 duration-700"
+                      : "opacity-0"
+                  }`}
+                >
+                  Facebook
+                </span>
+              </a>
+            </section>
           </div>
         </div>
         <div className="footer-about">
-          <h3>About Us</h3>
-          <p>
+          <h3 className="titleFooter">About Us</h3>
+          <p className="FooterContent">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

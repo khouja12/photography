@@ -1,0 +1,13 @@
+p {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 20px; 
+  }
+  
+  p b {
+    font-weight: bold; 
+    color: #000; 
+  }
+  
