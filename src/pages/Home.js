@@ -32,7 +32,7 @@ const Home = () => {
               hire me
             </Link>
           </motion.div>
-          <div className=" flex justify-end max-h-96 lg:max-h-max  ">
+          <div className=" flex justify-end max-h-96 lg:max-h-max">
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -41,7 +41,6 @@ const Home = () => {
               className="relative lg:-right-40 overflow-hidden "
             >
               <motion.img
-              
                 whileHover={{ scale: 1.1 }}
                 transition={transition1}
                 src={WomanImg}

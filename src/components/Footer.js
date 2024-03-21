@@ -31,8 +31,8 @@ const Footer = () => {
                 <div className="profile">
                   <div className="user">
                     <div className="img">
-                      {" "}
-                      <img src={logo} />
+                      
+                      <img src={logo} alt="" />
                     </div>
                     <div className="details">
                       <div className="name">User</div>
@@ -87,7 +87,7 @@ const Footer = () => {
                   width="1em"
                   height="3em"
                   viewBox="0 0 448 512"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="currentColor"
                   stroke="currentColor"
                   className="w-9"
