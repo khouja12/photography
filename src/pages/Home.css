@@ -1,14 +1,9 @@
-/* You may adjust these styles as needed */
-.h1 {
-    font-size: 3rem; /* Adjust size as needed */
-    color: #333; /* Adjust color as needed */
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  
+
   /* Additional styles for the image */
   img {
     max-width: 100%; /* Ensures image doesn't overflow its container */
     height: auto; /* Maintains aspect ratio */
   }
   
+  .boxTextHome{
+  }
