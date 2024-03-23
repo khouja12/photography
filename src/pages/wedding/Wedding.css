@@ -1,0 +1,61 @@
+.demo-carousel {
+  max-width: 100%; /* Ensure the carousel doesn't exceed its container */
+  margin: auto; /* Center the carousel horizontally */
+}
+
+.demo-carousel .carousel .slide img {
+  width: 100%; /* Ensure images fill their respective carousel items */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Wedding.css */
+
+.caroussel-container {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+  height: 10%;
+  ;
+}
+
+.carousselWedding {
+  width: 40%; /* Adjust the width as needed */
+  max-width: 800px; /* Adjust the max-width as needed */
+}
+
+/* Move thumbnails to the left side */
+.carousselWedding .thumbs-wrapper {
+  left: 1;
+  right: auto;
+}
+
+/* Adjust spacing between thumbnails */
+.carousselWedding .thumbs-wrapper .thumbs {
+  margin-right: 10px;
+}
+.thumbs {
+  left: auto;
+  right: 1;
+}
+/* Style individual thumbnails */
+.carousselWedding .thumbs-wrapper .thumbs .thumb {
+  border-radius: 5px; /* Optional: Add border radius to thumbnails */
+}
+
+/* Style the selected thumbnail */
+.carousselWedding .thumbs-wrapper .thumbs .selected {
+  border: 2px solid #007bff; /* Change border color for selected thumbnail */
+}
+
+.ImageWedding {
+  width: 90%;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.sideImageWedding {
+  width: 45rem;
+  gap: 20%;
+justify-content: space-around;
+}
