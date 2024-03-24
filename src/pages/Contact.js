@@ -59,7 +59,7 @@ const Contact = () => {
           {/*text*/}
           <div className="lg:flex-1 lg:pt-32 px-4">
             <h1 className="h1"> contact me</h1>
-            <p className="mb-12"> i would love to get suggestion from you. </p>
+            <p className="mb-12"> i would love to get suggestion from you, <br/> and make your resevation here. </p>
 
             {/*form*/}
             <form className="flex flex-col gap-y-4" onSubmit={HandelSendMail}>
@@ -108,7 +108,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ transition: transition1, duration: 1.5 }}
-            className="lg:flex-1"
+            className="lg:flex-1 w-[150px]"
           >
             <img src={womanImg} alt="Contact" className="w-full h-auto" />
           </motion.div>

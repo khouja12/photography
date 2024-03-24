@@ -19,11 +19,12 @@ import img17 from "../../img/lifeStyle image/img17.JPG";
 import img18 from "../../img/lifeStyle image/img18.jpg";
 import img19 from "../../img/lifeStyle image/img19.jpg";
 import img20 from "../../img/lifeStyle image/img20.JPEG";
+import { Image } from "antd";
 
 const LifeStyle = () => {
   const imglist = [
-    { image: img1 },
     { image: img2 },
+    { image: img1 },
     { image: img3 },
     { image: img4 },
     { image: img5 },
@@ -49,7 +50,7 @@ const LifeStyle = () => {
       <div className="BabyContainer">
         <div className="imgCenter">
           {imglist.map((e) => (
-            <img className="aa" src={e.image} alt="" />
+            <Image width={250} height={300} className="aa" src={e.image} alt="" />
           ))}
         </div>
       </div>

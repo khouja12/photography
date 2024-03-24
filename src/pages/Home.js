@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import WomanImg from "../img/home/woman.png";
 import { Link } from "react-router-dom";
 import { transition1 } from "../transitions";
-
+import './Home.css'
 const Home = () => {
   return (
     <motion.section
@@ -26,7 +26,7 @@ const Home = () => {
               photographer <br /> and film maker
             </h1>
             <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
-              los Angeles USA
+            Canada
             </p>
             <Link to={"/Contact"} className="btn ">
               hire me
@@ -38,7 +38,7 @@ const Home = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
               transition={transition1}
-              className="relative lg:-right-40 overflow-hidden"
+              className="content-container"
             >
               <motion.img
                 whileHover={{ scale: 1.1 }}

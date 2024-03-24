@@ -18,6 +18,7 @@ const CarousselUI = () => {
 
   return (
     <div>
+    <h1  className="h1  text-center" style={{ fontSize: "50px" }}> Wedding</h1>
       <container className="caroussel-container">
         <div className="ImageWedding">
           <Carousel
@@ -28,7 +29,7 @@ const CarousselUI = () => {
             showThumbs={true} // Hide thumbnail images
             infiniteLoop={true} // Enable infinite loop
             autoPlay={true} // Enable autoplay
-            interval={5000} // Set autoplay interval to 5 seconds
+            interval={3000} // Set autoplay interval to 5 seconds
           >
             {image.map((image, index) => (
               <div key={index}>

@@ -1,9 +1,18 @@
+/* Additional styles for the image */
+img {
+  max-width: 100%; /* Ensures image doesn't overflow its container */
+  height: auto; /* Maintains aspect ratio */
+}
 
-  /* Additional styles for the image */
-  img {
-    max-width: 100%; /* Ensures image doesn't overflow its container */
-    height: auto; /* Maintains aspect ratio */
+.content-container {
+  position: relative;
+  overflow: hidden;
+  left: 550px;
+}
+@media (max-width: 1231px) {
+  .content-container {
+    max-width: 400px;
+    position: relative;
+    left: 0;
   }
-  
-  .boxTextHome{
-  }
+}
