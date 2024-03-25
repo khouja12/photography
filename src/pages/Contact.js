@@ -3,13 +3,12 @@ import womanImg from "../img/contact/woman.png";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import "./Contact.css";
-import emailjs from "emailjs-com"; // Correct import statement
+import emailjs from "emailjs-com"; 
 
 const Contact = () => {
   const HandelSendMail = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
 
-    // Get form data
     const formData = {
       from_name: event.target.Name.value,
       Email_id: event.target.Email_id.value,
@@ -17,7 +16,7 @@ const Contact = () => {
       Message: event.target.Message.value,
     };
 
-    // Send email using emailjs
+   
     emailjs
       .send(
         "service_iwe7u5b",
@@ -29,6 +28,11 @@ const Contact = () => {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Email sent successfully!");
+          event.target.Name.value =
+            event.target.Email_id.value =
+            event.target.Phone.value =
+            event.target.Message.value =
+              "";
         },
         (error) => {
           console.error("FAILED...", error);
@@ -45,7 +49,7 @@ const Contact = () => {
       transition={transition1}
       className="section"
     >
-      <div className="container h-full mx-auto">
+      <div className="container h-full mx-auto contactContainer">
         <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-8 text-center lg:text-left">
           {/*bg*/}
           <motion.div
@@ -58,12 +62,14 @@ const Contact = () => {
 
           {/*text*/}
           <div className="lg:flex-1 lg:pt-32 px-4">
-            <h1 className="h1"> contact me</h1>
-            <p className="mb-12"> i would love to get suggestion from you, <br/> and make your resevation here. </p>
+            <h1 className="h1"> Contact Me</h1>
+            <p className="mb-12">
+              I would love to hear from you and help you with your queries.
+            </p>
 
             {/*form*/}
             <form className="flex flex-col gap-y-4" onSubmit={HandelSendMail}>
-              <div className="flex gap-x-10">
+              <div className="flex flex-col lg:flex-row gap-x-10">
                 <input
                   className="input-field"
                   name="Name"
@@ -74,14 +80,14 @@ const Contact = () => {
                 <input
                   className="input-field"
                   name="Email_id"
-                  type="email" // Change type to "email"
+                  type="email" 
                   placeholder="Your Email Address"
                   required
                 />
                 <input
                   className="input-field input-field-number"
                   name="Phone"
-                  type="tel" // Consider using type "tel" for phone numbers
+                  type="tel" 
                   placeholder="Your Number"
                   required
                 />
@@ -94,10 +100,10 @@ const Contact = () => {
               ></textarea>
 
               <button
-                className="btn mb--[30px] mx-auto lg:mx-0 self-start"
+                className="btn mb-4 lg:mb-0 lg:self-start"
                 type="submit"
               >
-                Send it
+                Send
               </button>
             </form>
           </div>
@@ -108,7 +114,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ transition: transition1, duration: 1.5 }}
-            className="lg:flex-1 w-[150px]"
+            className="lg:flex-1 w-full lg:w-[300px]"
           >
             <img src={womanImg} alt="Contact" className="w-full h-auto" />
           </motion.div>
