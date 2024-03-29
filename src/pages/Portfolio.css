@@ -34,9 +34,20 @@
   color: #422a28; /* Adjust link color on hover */
 }
 
-@media (max-width: 1231px) {
+@media (max-width: 431px) {
   .section-potfolio {
-    /* background-color: blue; */
+    position: relative;
+    left: -10rem;
+    margin-top: 3rem;
+  }
+
+}
+
+@media (max-width: 391px) {
+  .section-potfolio {
+    position: relative;
+    left: -13rem;
+    margin-top: 3rem;
   }
 
 }

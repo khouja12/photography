@@ -45,7 +45,7 @@ const Home = () => {
                 transition={transition1}
                 src={WomanImg}
                 alt="woman"
-                className="imgWoman w-34 lg:w-auto" // Adjust width as needed
+                className="imgWoman w-34 lg:w-auto" 
               />
             </motion.div>
           </div>

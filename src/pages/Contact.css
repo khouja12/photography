@@ -1,23 +1,40 @@
 .input-field {
-    outline: none;
-    border-bottom: 1px solid #757879;
-    background-color: transparent;
-    font-family: secondary;
-    height: 3rem;
-    padding-left: 3px;
-    resize: none;
+  outline: none;
+  border-bottom: 1px solid #757879;
+  background-color: transparent;
+  font-family: secondary;
+  height: 3rem;
+  padding-left: 3px;
+  resize: none;
+}
 
-  }
-  
-  .input-field::placeholder {
-    color: #757879;
-  }
-  
-  input::-webkit-outer-spin-button,
+.input-field::placeholder {
+  color: #757879;
+}
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.contactContainer{
+@media (max-width: 431px) {
+  .contactContainer {
+    position: relative;
+    right: 15%;
+    margin-bottom: 10rem;
+  }
+  .imgsContact{
+    margin-bottom: 65rem;
+  }
+ 
+}
+
+@media (max-width: 376px) {
+  .contactContainer {
+    position: relative;
+    right: 15%;
+    margin-bottom: 20rem;
+  }
+ 
  
 }

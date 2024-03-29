@@ -20,7 +20,7 @@ import img18 from "../../img/lifeStyle image/img18.jpg";
 import img19 from "../../img/lifeStyle image/img19.jpg";
 import img20 from "../../img/lifeStyle image/img20.JPEG";
 import { Image } from "antd";
-
+import './LifeStyle.css'
 const LifeStyle = () => {
   const imglist = [
     { image: img2 },

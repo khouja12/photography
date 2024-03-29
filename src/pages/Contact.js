@@ -46,7 +46,7 @@ const Contact = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "100%" }}
       transition={transition1}
-      className="section"
+      className="section contactContainer"
     >
       <div className="container h-full mx-auto contactContainer">
         <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-8 text-center lg:text-left">
@@ -110,9 +110,9 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ transition: transition1, duration: 1.5 }}
-            className="lg:flex-1 w-full lg:w-[300px]"
+            className="lg:flex-1 w-full lg:w-[300px] imgsContact"
           >
-            <img src={womanImg} alt="Contact" className="w-full h-auto" />
+            <img src={womanImg} alt="Contact" className="imgsContact  w-full h-auto" />
           </motion.div>
         </div>
       </div>

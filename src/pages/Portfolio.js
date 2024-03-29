@@ -50,11 +50,17 @@ const Portfolio = () => {
           </motion.div>
           {/*image*/}
           <div class="myWork">
-          <div class="h1 myWorkTitles"> My work</div>
-          <Link to={"/lifeStyle"}><b>.</b>LifeStyle<b>.</b></Link>
-          <Link to={"/Wedding"}><b>.</b>Wedding<b>.</b></Link>
-          <Link to={"/Baby"}><b>.</b>Baby<b>.</b></Link>
-        </div>
+            <div class="h1 myWorkTitles"> My work</div>
+            <Link to={"/lifeStyle"}>
+              <b>.</b>LifeStyle<b>.</b>
+            </Link>
+            <Link to={"/Wedding"}>
+              <b>.</b>Wedding<b>.</b>
+            </Link>
+            <Link to={"/Baby"}>
+              <b>.</b>Baby<b>.</b>
+            </Link>
+          </div>
         </div>
       </div>
     </motion.section>
