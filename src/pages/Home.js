@@ -11,7 +11,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition1}
-      className="section"
+      className="wholePageHome section"
     >
       <div className="container mx-auto h-full relative">
         <div className="flex flex-col justify-center ">
@@ -20,7 +20,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-50%" }}
             transition={transition1}
-            className="w-full pt-36 pb-14 lg:pt-0  lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start"
+            className=" w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">
               photographer <br /> and film maker
@@ -45,7 +45,7 @@ const Home = () => {
                 transition={transition1}
                 src={WomanImg}
                 alt="woman"
-                className="w-34 lg:w-auto" // Adjust width as needed
+                className="imgWoman w-34 lg:w-auto" // Adjust width as needed
               />
             </motion.div>
           </div>

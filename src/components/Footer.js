@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-contact">
           <h3 className="titleFooter">Contact</h3>
-          <p className="FooterContent">Email: info@example.com</p>
+          <p className="FooterContent">Email: ykphotography2@gmail.com</p>
           <p className="FooterContent">Phone: +1234567890</p>
           <p className="FooterContent">Address: 123 Street, City, Country</p>
         </div>
@@ -31,7 +31,6 @@ const Footer = () => {
                 <div className="profile">
                   <div className="user">
                     <div className="img">
-                      
                       <img src={logo} alt="" />
                     </div>
                     <div className="details">
@@ -97,7 +96,7 @@ const Footer = () => {
                 <span
                   className={`absolute ${
                     isHovered
-                      ? "opacity-100 text-gray-700 text-sm -translate-y-10 duration-700"
+                      ? "opacity-100 text-blue-700 text-sm -translate-y-10 duration-700"
                       : "opacity-0"
                   }`}
                 >
@@ -110,8 +109,16 @@ const Footer = () => {
         <div className="footer-about">
           <h3 className="titleFooter">About Us</h3>
           <p className="FooterContent">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            As a professional photographer based in Montreal, Canada, I am Yosra
+            Khouja , dedicated to capturing life's most precious moments through
+            my lens. With a passion for storytelling and an eye for detail, I
+            specialize in wedding, birthday, and nature photography, crafting
+            timeless images that evoke emotion and preserve memories for a
+            lifetime. With years of experience and a commitment to excellence, I
+            strive to exceed my clients' expectations, delivering stunning
+            visuals that encapsulate the essence of every occasion. From
+            intimate ceremonies to grand celebrations, I am honored to be
+            entrusted with documenting life's most significant milestones.
           </p>
         </div>
       </div>

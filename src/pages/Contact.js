@@ -3,11 +3,11 @@ import womanImg from "../img/contact/woman.png";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import "./Contact.css";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const HandelSendMail = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const formData = {
       from_name: event.target.Name.value,
@@ -16,7 +16,6 @@ const Contact = () => {
       Message: event.target.Message.value,
     };
 
-   
     emailjs
       .send(
         "service_iwe7u5b",
@@ -80,14 +79,14 @@ const Contact = () => {
                 <input
                   className="input-field"
                   name="Email_id"
-                  type="email" 
+                  type="email"
                   placeholder="Your Email Address"
                   required
                 />
                 <input
                   className="input-field input-field-number"
                   name="Phone"
-                  type="tel" 
+                  type="tel"
                   placeholder="Your Number"
                   required
                 />
@@ -99,10 +98,7 @@ const Contact = () => {
                 required
               ></textarea>
 
-              <button
-                className="btn mb-4 lg:mb-0 lg:self-start"
-                type="submit"
-              >
+              <button className="btn mb-4 lg:mb-0 lg:self-start" type="submit">
                 Send
               </button>
             </form>

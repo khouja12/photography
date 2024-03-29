@@ -4,6 +4,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 const menuVariants = {
   hidden: {
     x: "100%",
@@ -22,6 +23,7 @@ const MobileNav = () => {
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -37,7 +39,7 @@ const MobileNav = () => {
   };
 
   return (
-    <nav className="text-priamry xl:hidden">
+    <nav className="text-primary xl:hidden ">
       <div onClick={toggleMenu} className="text-3xl cursor-pointer">
         {openMenu ? <IoMdClose /> : <CgMenuRight />}
       </div>
@@ -65,43 +67,42 @@ const MobileNav = () => {
               About
             </Link>
           </li>
-          <li>
-          <div
-          className="relative"
-          onMouseEnter={openDropdownOnHover}
-          onMouseLeave={closeDropdown}
-        >
-          <Link to={'/Portfolio'}>
-            <span
-              onClick={toggleDropdown}
-              className="text-[#696c6d] hover:text-primary transition cursor-pointer"
+          <li className="relative">
+            <div
+              onMouseEnter={openDropdownOnHover}
+              onMouseLeave={closeDropdown}
             >
-              Portfolio
-            </span>
-          </Link>
-          {dropdownOpen && (
-            <div className="absolute top-full left-0 bg-white shadow-lg p-2">
-              <Link
-                to={"/LifeStyle"}
-                className="block py-1 text-[#696c6d] hover:text-primary transition"
-              >
-                Lifestyle
+              <Link to={'/Portfolio'}>
+                <span
+                  onClick={toggleDropdown}
+                  className="text-[#696c6d] hover:text-primary transition cursor-pointer"
+                >
+                  Portfolio
+                </span>
               </Link>
-              <Link
-                to={"/Wedding"}
-                className="block py-1 text-[#696c6d] hover:text-primary transition"
-              >
-                Wedding
-              </Link>
-              <Link
-                to={"/Baby"}
-                className="block py-1 text-[#696c6d] hover:text-primary transition"
-              >
-                Baby
-              </Link>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 bg-white shadow-lg p-2">
+                  <Link
+                    to={"/LifeStyle"}
+                    className="block py-1 text-[#696c6d] hover:text-primary transition"
+                  >
+                    Lifestyle
+                  </Link>
+                  <Link
+                    to={"/Wedding"}
+                    className="block py-1 text-[#696c6d] hover:text-primary transition"
+                  >
+                    Wedding
+                  </Link>
+                  <Link
+                    to={"/Baby"}
+                    className="block py-1 text-[#696c6d] hover:text-primary transition"
+                  >
+                    Baby
+                  </Link>
+                </div>
+              )}
             </div>
-          )}
-        </div>
           </li>
           <li>
             <Link to={"/Contact"} onClick={toggleMenu}>

@@ -17,7 +17,7 @@ const CarousselUI = () => {
   };
 
   return (
-    <div>
+    <div className="wholePageWedding">
     <h1  className="h1  text-center" style={{ fontSize: "50px" }}> Wedding</h1>
       <container className="caroussel-container">
         <div className="ImageWedding">

@@ -16,8 +16,6 @@
 .myWork {
   font-family: Arial, sans-serif; /* Change font if desired */
   padding: 10px; /* Adjust padding as needed */
-  
-
 }
 
 .myWorkTitles {
@@ -34,4 +32,11 @@
 .myWork a:hover {
   text-decoration: underline; /* Add underline on hover */
   color: #422a28; /* Adjust link color on hover */
+}
+
+@media (max-width: 1231px) {
+  .section-potfolio {
+    /* background-color: blue; */
+  }
+
 }

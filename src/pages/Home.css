@@ -10,9 +10,35 @@ img {
   left: 550px;
 }
 @media (max-width: 1231px) {
+  .wholePageHome {
+    position: relative;
+    left: 3rem;
+    margin-bottom: 1rem;
+  }
   .content-container {
     max-width: 400px;
     position: relative;
-    left: 0;
+    left: -2rem;
+    margin-bottom: 1rem;
   }
+}
+
+@media (max-width: 376px) {
+  .wholePageHome {
+    position: relative;
+    left: 3rem;
+    margin-bottom: 15rem;
+  }
+
+
+}
+
+@media (max-width: 321px) {
+  .wholePageHome {
+    position: relative;
+    left: 3rem;
+    margin-bottom: 30rem;
+  }
+
+
 }

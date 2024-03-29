@@ -1,6 +1,6 @@
 .demo-carousel {
-  max-width: 100%; /* Ensure the carousel doesn't exceed its container */
-  margin: auto; /* Center the carousel horizontally */
+  max-width: 100%;
+  margin: auto;
 }
 
 .demo-carousel .carousel .slide img {
@@ -10,12 +10,12 @@
 
 /* Wedding.css */
 
+
 .caroussel-container {
   display: flex;
   margin-left: 1rem;
   align-items: center;
   height: 10%;
-  ;
 }
 
 .carousselWedding {
@@ -57,5 +57,23 @@
 .sideImageWedding {
   width: 45rem;
   gap: 20%;
-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens up to 576px wide */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .h1.text-center {
+    margin-right: 40%;
+    margin-bottom: 1rem;
+  }
+  .carousselWedding {
+    width: 200px;
+  }
+  .sideImageWedding img {
+    width: 300px; /* Make side images full-width on screens below 576px */
+  }
 }

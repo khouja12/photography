@@ -5,6 +5,8 @@
     font-family: secondary;
     height: 3rem;
     padding-left: 3px;
+    resize: none;
+
   }
   
   .input-field::placeholder {
@@ -15,4 +17,7 @@
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.contactContainer{
+ 
 }
