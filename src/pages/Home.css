@@ -9,35 +9,27 @@ img {
   overflow: hidden;
   left: 550px;
 }
-@media (max-width: 1231px) {
+@media screen and (max-width: 377px) and (min-width:319px) {
   .wholePageHome {
     position: relative;
     left: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 80vh;
   }
   .content-container {
-    max-width: 400px;
+    position: relative;
+    left: -3rem;
+  }
+}
+
+
+@media screen and (max-width: 432px) and (min-width:389px) {
+  .wholePageHome {
+    position: relative;
+    left: 2rem;
+    margin-bottom: 2vh;
+  }
+  .content-container {
     position: relative;
     left: -2rem;
-    margin-bottom: 1rem;
   }
-}
-
-@media (max-width: 376px) {
-  .wholePageHome {
-    position: relative;
-    left: 3rem;
-    margin-bottom: 15rem;
-  }
-
-}
-
-@media (max-width: 321px) {
-  .wholePageHome {
-    position: relative;
-    left: 3rem;
-    margin-bottom: 30rem;
-  }
-
-
 }
