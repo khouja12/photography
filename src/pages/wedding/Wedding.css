@@ -10,6 +10,9 @@
 
 /* Wedding.css */
 
+.wholePageWedding{
+  margin-left: 10rem;
+}
 
 .caroussel-container {
   display: flex;
@@ -65,6 +68,10 @@
   *{
     margin: 0;
     padding: 0;
+  }
+  .wholePageWedding{
+    position: relative;
+    left: -10rem;
   }
   .h1.text-center {
     margin-right: 60%;

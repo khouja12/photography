@@ -15,14 +15,12 @@ const About = () => {
       transition={transition1}
       className="section"
     >
-      <div className="container mw-auto h-full relative">
+      <div className="container mw-auto h-full ml-20 relative">
         {/* text & image */}
 
-        <div className=" flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16 ">
+        <div className=" flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 lg:text-left lg:pt-16 ">
           {/*  image */}
-          <div className="flex-1 mt-1 max-h-95 lg:max-h-max-order-2 lg:order-none overflow-hidden">
-            <img src={WomanImg} />
-          </div>
+         
 
           {/*  text */}
 
