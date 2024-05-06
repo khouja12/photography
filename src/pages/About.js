@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Portfolio from "./Portfolio";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
+import { FaArrowRight } from "react-icons/fa";
+
 import './About.css'
 
 const About = () => {
@@ -41,7 +43,7 @@ const About = () => {
 
             <br />
             <Link to={"/Portfolio"} className="btn">
-              view my work
+              view my work &nbsp;<FaArrowRight />
             </Link>
           </motion.div>
         </div>

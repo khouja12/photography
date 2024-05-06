@@ -47,7 +47,7 @@ const Header = () => {
             onMouseEnter={openDropdownOnHover}
             onMouseLeave={closeDropdown}
           >
-            <Link to={'/Portfolio'}>
+            <Link to={"/Portfolio"}>
               <span
                 onClick={toggleDropdown}
                 className="text-[#696c6d] hover:text-primary transition cursor-pointer"
@@ -56,7 +56,7 @@ const Header = () => {
               </span>
             </Link>
             {dropdownOpen && (
-              <div className="absolute top-full left-0 bg-white shadow-lg p-2">
+              <div className="drop absolute top-full left-0 bg-white shadow-lg p-2">
                 <Link
                   to={"/LifeStyle"}
                   className="block py-1 text-[#696c6d] hover:text-primary transition"

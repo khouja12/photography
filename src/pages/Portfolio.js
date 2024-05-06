@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import "./Portfolio.css";
+import { FaArrowRight } from "react-icons/fa";
 
 const Portfolio = () => {
   return (
@@ -44,7 +45,8 @@ const Portfolio = () => {
 
             <div className="mb-[8rem]">
               <Link to={"/Contact"} className="btn mb-[30px] mx-auto lg:mx-0">
-                Contact Me
+                Contact Me &nbsp;
+                <FaArrowRight />
               </Link>
             </div>
           </motion.div>

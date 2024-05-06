@@ -14,6 +14,8 @@ const Contact = () => {
       Email_id: event.target.Email_id.value,
       Phone: event.target.Phone.value,
       Message: event.target.Message.value,
+      Date: event.target.Date.value,
+      ServiceType: event.target.ServiceType.value,
     };
 
     emailjs
@@ -31,7 +33,9 @@ const Contact = () => {
             event.target.Email_id.value =
             event.target.Phone.value =
             event.target.Message.value =
-              "";
+            event.target.Date.value =
+            event.target.ServiceType.value =
+              " ";
         },
         (error) => {
           console.error("FAILED...", error);
@@ -91,14 +95,40 @@ const Contact = () => {
                   required
                 />
               </div>
+              <input
+                className="input-field input"
+                name="Date"
+                type="date"
+                placeholder="What date is your event?"
+                required
+              />
+
+              <select
+                className="input-field input-field-number"
+                name="ServiceType"
+                required
+              >
+                <option value="" >
+                  What type of service are you looking for?{" "}
+                </option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="portrait">Portrait Photography</option>
+                <option value="event">Event Coverage</option>
+                <option value="commercial">Commercial Photography</option>
+                <option value="other">Other</option>
+              </select>
+
               <textarea
                 className="input-field"
                 name="Message"
-                placeholder="Your Message"
+                placeholder="Tell me more about your event! "
                 required
               ></textarea>
 
-              <button className="btn mb-4 lg:mb-0 lg:self-start" type="submit">
+              <button
+                className="btn mb-10 lg:mb-10 lg:self-start"
+                type="submit"
+              >
                 Send
               </button>
             </form>
@@ -112,7 +142,11 @@ const Contact = () => {
             transition={{ transition: transition1, duration: 1.5 }}
             className="lg:flex-1 w-full lg:w-[300px] imgsContact"
           >
-            <img src={womanImg} alt="Contact" className="imgsContact  w-full h-auto" />
+            <img
+              src={womanImg}
+              alt="Contact"
+              className="imgsContact  w-full h-auto"
+            />
           </motion.div>
         </div>
       </div>

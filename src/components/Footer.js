@@ -19,8 +19,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h3 className="titleFooter">Contact</h3>
           <p className="FooterContent">Email: ykphotography2@gmail.com</p>
-          <p className="FooterContent">Phone: +1234567890</p>
-          <p className="FooterContent">Address: 123 Street, City, Country</p>
+          <p className="FooterContent">Phone: 514-781-6008</p>
+          <p className="FooterContent">Montreal</p>
         </div>
         <div className="footer-social">
           <h3 className="titleFooter">Follow Us</h3>
@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 YourPhotographer. All rights reserved.</p>
+        <p className="h1"> &copy;  Yosra khouja photography </p>
       </div>
     </footer>
   );

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  ImFacebook,
-  ImTwitter,
-  ImPinterest,
-  ImInstagram,
-  ImYoutube,
-} from "react-icons/im";
+import { ImFacebook, ImInstagram } from "react-icons/im";
 const Socials = () => {
   return (
     <div className="hidden xl:flex ml-24">
@@ -22,23 +16,6 @@ const Socials = () => {
             target="_blank"
           >
             <ImInstagram />
-          </a>
-        </li>
-        <li>
-          <a href="www.pinterest.com" target="_blank">
-            <ImPinterest />
-          </a>
-        </li>
-
-        <li>
-          <a href="www.youtube.com" target="_blank">
-            <ImYoutube />
-          </a>
-        </li>
-
-        <li>
-          <a href="www.twitter.com" target="_blank">
-            <ImTwitter />
           </a>
         </li>
       </ul>

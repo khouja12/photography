@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import WomanImg from "../img/home/woman.png";
 import { Link } from "react-router-dom";
 import { transition1 } from "../transitions";
-import './Home.css'
+import { FaArrowRight } from "react-icons/fa";
+
+import "./Home.css";
 const Home = () => {
   return (
     <motion.section
@@ -15,7 +17,6 @@ const Home = () => {
     >
       <div className="container mx-auto h-full relative">
         <div className="flex flex-col justify-center ">
-        
           <motion.div
             initial={{ opacity: 0, y: "-50%" }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,10 +28,10 @@ const Home = () => {
               photographer <br /> and film maker
             </h1>
             <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
-            Canada
+              Based in Montreal
             </p>
-            <Link to={"/Contact"} className="btn ">
-              hire me
+            <Link to={"/Contact"} className="btn">
+            Book now&nbsp;<FaArrowRight />
             </Link>
           </motion.div>
           <div className="flex justify-end max-h-96 lg:max-h-max">
@@ -46,7 +47,7 @@ const Home = () => {
                 transition={transition1}
                 src={WomanImg}
                 alt="woman"
-                className="imgWoman w-34 lg:w-auto" 
+                className="imgWoman w-34 lg:w-auto"
               />
             </motion.div>
           </div>
