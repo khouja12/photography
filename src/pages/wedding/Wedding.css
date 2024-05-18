@@ -84,3 +84,17 @@
     width: 300px; /* Make side images full-width on screens below 576px */
   }
 }
+/* Wedding.css */
+.placeholder {
+  width: 550px;
+  height: 550px;
+  background-color: #373737; /* Light gray color for the placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  color: #999;
+  font-size: 16px;
+}

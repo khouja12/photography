@@ -5,3 +5,17 @@
     margin-top: 3rem;
   }
 }
+/* LifeStyle.css */
+.placeholder {
+  width: 350px;
+  height: 450px;
+  background-color: #373737; /* Light gray color for the placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  color: #999;
+  font-size: 16px;
+}

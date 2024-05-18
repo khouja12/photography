@@ -1,50 +1,59 @@
-import React, { useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel CSS
-import { Carousel } from "react-responsive-carousel";
-import img1 from "../../img/Wedding image/img1.JPG";
-import img2 from "../../img/Wedding image/img2.JPG";
-import img3 from "../../img/Wedding image/img3.JPG";
-import img4 from "../../img/Wedding image/img4.JPG";
-import img5 from "../../img/Wedding image/img5.JPG";
+import React, { useEffect, useState } from "react";
+import { Image } from "antd";
 import "./Wedding.css";
+import { APIURL, URLS } from "../../config";
 
-const CarousselUI = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+const Wedding = () => {
+  const [imgList, setImageList] = useState([]);
+  const [loadedImages, setLoadedImages] = useState({});
 
-  const image = [img2, img3, img4];
-  const handleSelect = (index) => {
-    setSelectedIndex(index);
+  useEffect(() => {
+    fetch(URLS.API_Wedding)
+      .then((res) => res.json())
+      .then((data) => {
+        setImageList(data.data);
+      });
+  }, []);
+
+  const handleImageLoad = (index) => {
+    setLoadedImages((prevLoadedImages) => ({
+      ...prevLoadedImages,
+      [index]: true,
+    }));
   };
 
   return (
-    <div className="wholePageWedding">
-    <h1  className="h1  text-center" style={{ fontSize: "50px" }}> Wedding</h1>
-      <container className="caroussel-container">
-        <div className="ImageWedding">
-          <Carousel
-            className="carousselWedding"
-            selectedItem={selectedIndex}
-            onChange={handleSelect}
-            showStatus={false} // Hide status indicators
-            showThumbs={true} // Hide thumbnail images
-            infiniteLoop={true} // Enable infinite loop
-            autoPlay={true} // Enable autoplay
-            interval={3000} // Set autoplay interval to 5 seconds
-          >
-            {image.map((image, index) => (
-              <div key={index}>
-                <img src={image} alt={`${index + 1}`} />
-              </div>
-            ))}
-          </Carousel>
-          <div className="sideImageWedding" >
-            <img src={img1} />
-            <img src={img5} />
-          </div>
+    <div>
+      <h1 className="h1 text-center" style={{ fontSize: "50px" }}>
+        Wedding
+      </h1>
+      <div className="BabyContainer">
+        <div className="imgCenter">
+          {imgList.map((e, index) => (
+            <div
+              key={index}
+              style={{ position: "relative", width: "550px", height: "550px" }}
+            >
+              {!loadedImages[index] && (
+                <div className="placeholder">
+                  <span className="placeholder-text">Loading...</span>
+                </div>
+              )}
+              <Image
+                width={550}
+                height={550}
+                className="aa"
+                src={APIURL + e.attributes.wedding.data.attributes.url}
+                alt=""
+                onLoad={() => handleImageLoad(index)}
+                style={{ display: loadedImages[index] ? "block" : "none" }}
+              />
+            </div>
+          ))}
         </div>
-      </container>
+      </div>
     </div>
   );
 };
 
-export default CarousselUI;
+export default Wedding;
